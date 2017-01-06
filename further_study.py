@@ -78,8 +78,10 @@ def custom_extend(input_list, second_list):
         True
 
     """
-
-    
+    count = 0
+    for element in input_list:
+        count += 1
+    input_list[count:] = second_list
 
 
 def custom_insert(input_list, index, value):
